@@ -155,7 +155,11 @@ set_starting_round()
 		level.start_round = getDvarInt( "start_round" );
 
 	level.first_round = false;
-    level.zombie_move_speed = 130;
+
+    // Ajustar la velocidad de movimiento de los zombis.
+    // Reduce este valor para hacer que los zombis se muevan más lentamente.
+    level.zombie_move_speed = 70;  // Puedes reducir este valor aún más si lo deseas.
+
 	level.zombie_vars[ "zombie_spawn_delay" ] = 0.08;
 	level.round_number = level.start_round;
 }
